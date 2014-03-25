@@ -101,5 +101,6 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'fisadev/fisa-vim-colorscheme'
+Bundle 'tomasr/molokai'
 
 filetype plugin indent on     " required!
