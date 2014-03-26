@@ -61,7 +61,7 @@ Bundle 'nvie/vim-togglemouse'
 "----------------------------------------
 "------- web backend ---------
 Bundle '2072/PHP-Indenting-for-VIm'
-"Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rails'
 Bundle 'lepture/vim-jinja'
 "Bundle 'digitaltoad/vim-jade'
 
@@ -80,7 +80,11 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'timcharper/textile.vim'
 
 "------- Ruby --------
-" Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-endwise'
+
+"------- Python -------
+"Bundle 'rkulla/pydiction'
+"Bundle 'klen/python-mode'
 
 "------- Go ----------
 Bundle 'jnwhiteh/vim-golang'
