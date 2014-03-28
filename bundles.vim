@@ -15,6 +15,9 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'mileszs/ack.vim'
+"Bundle 'msanders/snipmate.vim'
 " snippets
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
@@ -98,6 +101,8 @@ Bundle 'kien/rainbow_parentheses.vim'
 "--------------
 " Color Schemes
 "--------------
+"theme plugin
+Bundle 'godlygeek/csapprox'
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'rickharris/vim-monokai'
@@ -106,5 +111,7 @@ Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'tomasr/molokai'
+Bundle 'jaromero/vim-monokai-refined'
+Bundle 'vim-scripts/desert256.vim'
 
 filetype plugin indent on     " required!
