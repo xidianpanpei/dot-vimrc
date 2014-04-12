@@ -15,8 +15,8 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'mileszs/ack.vim'
+"Bundle 'davidhalter/jedi-vim'
+"Bundle 'mileszs/ack.vim'
 "Bundle 'msanders/snipmate.vim'
 " snippets
 Bundle 'garbas/vim-snipmate'
@@ -39,6 +39,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'ianva/vim-youdao-translater'
+Bundle 'terryma/vim-multiple-cursors'
 
 "--------------
 " IDE features
