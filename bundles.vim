@@ -41,6 +41,8 @@ Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'ianva/vim-youdao-translater'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'vim-scripts/argtextobj.vim'
 
 "--------------
 " IDE features
