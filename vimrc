@@ -273,8 +273,19 @@ vnoremap <silent> <C-T> <Esc>:Ydv<CR>
 nnoremap <silent> <C-T> <Esc>:Ydc<CR> 
 noremap <leader>yd :Yde<CR>
 
+" Gundo settings for saving undo records
+try
+    set undodir=~/.vim/temp_dirs/undodir
+    set undofile
+catch
+endtry
+
 " vim-multiple-cursors mapping
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+
+" airline plugin settings
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1

@@ -56,6 +56,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'bling/vim-airline'
+"Bundle 'tomtom/tcomment_vim'
 
 "-------------
 " Other Utils
@@ -88,6 +90,7 @@ Bundle 'tpope/vim-markdown'
 
 "------- Ruby --------
 Bundle 'tpope/vim-endwise'
+Bundle 'vim-ruby/vim-ruby'
 
 "------- Python -------
 "Bundle 'rkulla/pydiction'
