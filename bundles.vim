@@ -43,6 +43,7 @@ Bundle 'ianva/vim-youdao-translater'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'vim-scripts/argtextobj.vim'
+Bundle 'Shougo/wildfire.vim'
 
 "--------------
 " IDE features
@@ -56,7 +57,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'bling/vim-airline'
+Bundle 'dyng/ctrlsf.vim'
+"Bundle 'bling/vim-airline'
 "Bundle 'tomtom/tcomment_vim'
 
 "-------------
