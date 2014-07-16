@@ -30,6 +30,7 @@ Bundle 'tomtom/tlib_vim'
 "-----------------
 Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'vim-scripts/ctags.vim'
 
 "--------------
 " Fast editing
@@ -39,7 +40,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'ianva/vim-youdao-translater'
+"Bundle 'ianva/vim-youdao-translater'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'vim-scripts/argtextobj.vim'

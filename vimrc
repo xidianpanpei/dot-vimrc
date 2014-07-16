@@ -37,7 +37,7 @@ set backspace=indent,eol,start                                    " More powerfu
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
 set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
-set nowrap                                                        " dont wrap lines
+set wrap                                                        " dont wrap lines
 set scrolloff=5                                                   " 5 lines above/below cursor when scrolling
 set number                                                        " show line numbers
 set showmatch                                                     " show matching bracket (briefly jump)
@@ -54,7 +54,7 @@ set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
 set shiftwidth=4    " indent width
-" set textwidth=79
+set textwidth=80
 " set smarttab
 set expandtab       " expand tab to space
 
@@ -289,3 +289,6 @@ let g:multi_cursor_quit_key='<Esc>'
 " airline plugin settings
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
+
+" copy vim buffer to system buffer
+vmap <C-c> "+y
