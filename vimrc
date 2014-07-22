@@ -159,7 +159,7 @@ let NERDCompactSexyComs=1
 let g:user_emmet_expandabbr_key='<C-j>'
 
 " powerline
-"let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
@@ -292,3 +292,44 @@ let g:airline#extensions#tabline#enabled = 1
 
 " copy vim buffer to system buffer
 vmap <C-c> "+y
+
+" auto to add python comments
+function InsertPythonComment()
+    exe 'normal'.1.'G'
+    let line = getline('.')
+    if line =~ '^#!.*$' || line =~ '^#.*coding:.*$'
+        return
+    endif
+    normal O
+    call setline('.', '#!/usr/bin/env python')
+    normal o
+    call setline('.', '# -*- coding:utf-8 -*-')
+    normal o
+    call setline('.', '#')
+    normal o
+    call setline('.', '#   Author  :   '.g:python_author)
+    normal o
+    call setline('.', '#   E-mail  :   '.g:python_email)
+    normal o
+    call setline('.', '#   Date    :   '.strftime("%y/%m/%d %H:%M:%S"))
+    normal o
+    call setline('.', '#   Desc    :   ')
+    normal o
+    call setline('.', '#')
+    normal o
+    call cursor(7, 17)
+endfunction
+function InsertCommentWhenOpen()
+    if a:lastline == 1 && !getline('.')
+        call InsertPythonComment()
+    end
+endfunc
+au FileType python :%call InsertCommentWhenOpen()
+au FileType python map <F7> :call InsertPythonComment()<cr>
+
+" author name and author email settings
+let g:python_author = 'Bran.Pan'
+let g:python_email  = 'pannpei@gmail.com'
+
+" reslove the bug to paste code in vim
+set pastetoggle=<F12>
