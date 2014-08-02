@@ -54,7 +54,7 @@ set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
 set shiftwidth=4    " indent width
-set textwidth=80
+set textwidth=79
 " set smarttab
 set expandtab       " expand tab to space
 
@@ -330,6 +330,3 @@ au FileType python map <F7> :call InsertPythonComment()<cr>
 " author name and author email settings
 let g:python_author = 'Bran.Pan'
 let g:python_email  = 'pannpei@gmail.com'
-
-" reslove the bug to paste code in vim
-set pastetoggle=<F12>
