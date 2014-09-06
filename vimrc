@@ -46,6 +46,10 @@ set title                                                         " show file in
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
 set matchpairs+=<:>                                               " specially for html
+set wrap
+set linebreak
+set autoindent
+set smartindent
 " set relativenumber
 
 " Default Indentation
@@ -54,9 +58,10 @@ set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
 set shiftwidth=4    " indent width
-set textwidth=79
+set textwidth=80
 " set smarttab
 set expandtab       " expand tab to space
+set colorcolumn=81
 
 autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
@@ -160,6 +165,9 @@ let g:user_emmet_expandabbr_key='<C-j>'
 
 " powerline
 " let g:Powerline_symbols = 'fancy'
+
+" indentLine
+let g:indentLine_char = '┆'
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
@@ -269,8 +277,8 @@ if has("gui_running")
 endif
 
 " for youdao dictionary
-vnoremap <silent> <C-T> <Esc>:Ydv<CR> 
-nnoremap <silent> <C-T> <Esc>:Ydc<CR> 
+vnoremap <silent> <C-T> <Esc>:Ydv<CR>
+nnoremap <silent> <C-T> <Esc>:Ydc<CR>
 noremap <leader>yd :Yde<CR>
 
 " Gundo settings for saving undo records
@@ -307,13 +315,17 @@ function InsertPythonComment()
     normal o
     call setline('.', '#')
     normal o
-    call setline('.', '#   Author  :   '.g:python_author)
+    call setline('.', '# Author  :   '.g:python_author)
     normal o
-    call setline('.', '#   E-mail  :   '.g:python_email)
+    call setline('.', '# E-mail  :   '.g:python_email)
     normal o
-    call setline('.', '#   Date    :   '.strftime("%y/%m/%d %H:%M:%S"))
+    call setline('.', '# Date    :   '.strftime("%y/%m/%d %H:%M:%S"))
     normal o
-    call setline('.', '#   Desc    :   ')
+    call setline('.', '# Desc    :')
+    normal o
+    call setline('.', '# Version :')
+    normal o
+    call setline('.', '# Option  :')
     normal o
     call setline('.', '#')
     normal o
