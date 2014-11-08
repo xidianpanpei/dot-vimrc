@@ -325,7 +325,7 @@ function InsertPythonComment()
     normal o
     call setline('.', '# Version :')
     normal o
-    call setline('.', '# Option  :')
+    call setline('.', '# Licence : <your licence>')
     normal o
     call setline('.', '#')
     normal o
