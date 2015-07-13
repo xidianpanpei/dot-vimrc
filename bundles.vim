@@ -101,7 +101,7 @@ Bundle 'vim-ruby/vim-ruby'
 "Bundle 'klen/python-mode'
 
 "------- Go ----------
-Bundle 'jnwhiteh/vim-golang'
+Bundle 'fatih/vim-go'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
