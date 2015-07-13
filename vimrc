@@ -58,7 +58,7 @@ set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
 set shiftwidth=4    " indent width
-set textwidth=80
+" set textwidth=80
 " set smarttab
 set expandtab       " expand tab to space
 set colorcolumn=81
@@ -164,7 +164,7 @@ let NERDCompactSexyComs=1
 let g:user_emmet_expandabbr_key='<C-j>'
 
 " powerline
-" let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 
 " indentLine
 let g:indentLine_char = '┆'
@@ -312,22 +312,6 @@ function InsertPythonComment()
     call setline('.', '#!/usr/bin/env python')
     normal o
     call setline('.', '# -*- coding:utf-8 -*-')
-    normal o
-    call setline('.', '#')
-    normal o
-    call setline('.', '# Author  :   '.g:python_author)
-    normal o
-    call setline('.', '# E-mail  :   '.g:python_email)
-    normal o
-    call setline('.', '# Date    :   '.strftime("%y/%m/%d %H:%M:%S"))
-    normal o
-    call setline('.', '# Desc    :')
-    normal o
-    call setline('.', '# Version :')
-    normal o
-    call setline('.', '# Licence : <your licence>')
-    normal o
-    call setline('.', '#')
     normal o
     call cursor(7, 17)
 endfunction
